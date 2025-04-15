@@ -94,26 +94,7 @@
                 
             </div>
         </section>
-    <section class="cta-contact-section fix section-padding" style="padding-top:0;">
-            <div class="container">
-                <div class="cta-contact-wrapper bg-cover" style="background-image: url('assets/img/cta-contact-bg.jpg');">
-                    <div class="cta-image wow img-custom-anim-left" data-wow-duration="1.5s" data-wow-delay="0.3s">
-                        <img src="assets/img/contact-img%20(1).png" alt="img">
-                    </div>
-                    <div class="section-title mb-0">
-                        <div class="sub-title bg-color-3 wow fadeInUp">
-                            <span>Contact US</span>
-                        </div>
-                        <h2 class="text-white wow fadeInUp" data-wow-delay=".3s">
-                            24/7 Expert  Support <br> Our Customers Love
-                        </h2>
-                    </div>
-                    <div class="main-button wow fadeInUp" data-wow-delay=".5s">
-                        <a href="contact.php"> <span class="theme-btn">Talk to a Specialist </span><span class="arrow-btn"><i class="fa-regular fa-arrow-up-right"></i></span></a>
-                    </div>
-                </div>
-            </div>
-        </section>
+
 
         <!-- Footer Section Start -->
 <?php include'footer.php';?>

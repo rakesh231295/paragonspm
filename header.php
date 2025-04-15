@@ -40,6 +40,83 @@
             border-radius: 25px;
         }
         </style>
+        <!-- CSS Styles -->
+        <style>
+        .theme-btn {
+          padding: 10px 20px;
+          background-color: #0073e6;
+          color: #fff;
+          border-radius: 5px;
+          text-decoration: none;
+        }
+
+        .video-modal {
+          display: none;
+          position: fixed;
+          z-index: 9999;
+          top: 0; left: 0;
+          width: 100vw; height: 100vh;
+          background: rgba(0, 0, 0, 0.8);
+          justify-content: center;
+          align-items: center;
+        }
+
+        .video-modal.active {
+          display: flex;
+        }
+
+        .video-content {
+            text-align: center;
+          position: relative;
+          background: #fff;
+          padding: 15px;
+          border-radius: 10px;
+          max-width: 800px;
+          width: 90%;
+          box-sizing: border-box;
+        }
+
+        .video-content video {
+          width: 100%;
+          max-height: 450px;
+          object-fit: contain;
+          border-radius: 8px;
+        }
+
+        .close-btn {
+          position: absolute;
+          top: 10px;
+          right: 15px;
+          font-size: 28px;
+          color: #000;
+          cursor: pointer;
+          z-index: 10;
+        }
+
+        .download-btn {
+          display: inline-block;
+          margin-top: 15px;
+          padding: 10px 20px;
+          background: #0073e6;
+          color: #fff;
+          border-radius: 5px;
+          text-decoration: none;
+        }
+
+        .download-btn:hover {
+          background: #005bb5;
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 600px) {
+          .video-content video {
+            max-height: 250px;
+          }
+        }
+        a.active {
+            color: #0F75BC !important;
+        }
+        </style>
     </head>
     <body >
 
@@ -128,7 +205,7 @@
                                         <i class="fal fa-map-marker-alt"></i>
                                     </div>
                                     <div class="offcanvas__contact-text">
-                                        <a target="_blank" href="#">Saltlake, Kolkata, West Bengal</a>
+                                        <a target="_blank" href="#">2447 Ventura Drive • Oakville, ON • L6L 2H5</a>
                                     </div>
                                 </li>
                                 <li class="d-flex align-items-center">
@@ -136,35 +213,20 @@
                                         <i class="fal fa-envelope"></i>
                                     </div>
                                     <div class="offcanvas__contact-text">
-                                        <a href="mailto:info@example.com"><span class="mailto:info@example.com">info@paragonspm.com</span></a>
+                                        <a href="mailto:info@example.com"><span class="mailto:info@paragonspm.com">info@paragonspm.com</span></a>
                                     </div>
                                 </li>
-                                <li class="d-flex align-items-center">
-                                    <div class="offcanvas__contact-icon mr-15">
-                                        <i class="fal fa-clock"></i>
-                                    </div>
-                                    <div class="offcanvas__contact-text">
-                                        <a target="_blank" href="#">Mon-friday, 09am -05pm</a>
-                                    </div>
-                                </li>
-                                <li class="d-flex align-items-center">
-                                    <div class="offcanvas__contact-icon mr-15">
-                                        <i class="far fa-phone"></i>
-                                    </div>
-                                    <div class="offcanvas__contact-text">
-                                        <a href="tel:+11002345909">+11002345909</a>
-                                    </div>
-                                </li>
+                                
+                               
                             </ul>
                             <div class="header-button mt-4">
                                 
                             </div>
                             <div class="main-button">
-                                <a href="contact.html"> <span class="theme-btn"> Get Started </span><span class="arrow-btn"><i class="fa-regular fa-arrow-up-right"></i></span></a>
+                                <a href="contact.php"> <span class="theme-btn"> Get Started </span></a>
                             </div>
                             <div class="social-icon d-flex align-items-center">
-                                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                
                                 <a href="#"><i class="fab fa-youtube"></i></a>
                                 <a href="#"><i class="fab fa-linkedin-in"></i></a>
                             </div>
@@ -190,17 +252,17 @@
                                 <nav id="mobile-menu">
                                     <ul>
                                         
-                                        <li>
-                                            <a href="index.php">Home</a>
+                                        <li >
+                                            <a href="index.php" class="<?php if(basename($_SERVER['PHP_SELF'])=="index.php"){echo "active";} ?>">Home</a>
                                         </li>
                                         <li>
-                                            <a href="about.php">About Us</a>
+                                            <a href="about.php" class="<?php if(basename($_SERVER['PHP_SELF'])=="about.php"){echo "active";} ?>">About Us</a>
                                         </li>
                                         <li>
-                                            <a href="services.php">Our Services</a>
+                                            <a href="services.php" class="<?php if(basename($_SERVER['PHP_SELF'])=="services.php"){echo "active";} ?>">Our Product</a>
                                         </li>
                                         <li>
-                                            <a href="contact.php">Contact Us</a>
+                                            <a href="contact.php" class="<?php if(basename($_SERVER['PHP_SELF'])=="contact.php"){echo "active";} ?>">Contact Us</a>
                                         </li>
                                     </ul>
                                 </nav>
@@ -208,7 +270,7 @@
                         </div>
                         <div class="header-right d-flex justify-content-end align-items-center">
                             <div class="main-button">
-                                <a href="contact.html"> <span class="theme-btn"> Get Started </span></a>
+                                <a href="contact.php"> <span class="theme-btn"> Get Started </span></a>
                             </div>
                             <div class="header__hamburger d-xl-none my-auto">
                                 <div class="sidebar__toggle">

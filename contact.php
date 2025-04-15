@@ -33,6 +33,7 @@
         <section class="contact-info-section fix section-padding">
             <div class="container">
                 <div class="row g-4">
+                    <div class="col-lg-2"></div>
                     <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".3s">
                         <div class="contact-info-items text-center active">
                             <div class="icon">
@@ -41,7 +42,7 @@
                             <div class="content">
                                 <h3>Our Address</h3>
                                 <p>
-                                    Saltlake, Newtown Kolkata <br> West Bengal.
+                                    2447 Ventura Drive • Oakville, <br>ON • L6L 2H5
                                 </p>
                             </div>
                         </div>
@@ -52,14 +53,14 @@
                                 <i class="icon-10"></i>
                             </div>
                             <div class="content">
-                                <h3><a href="mailto:info@paragonspm.com">info@paragonspm.com</a></h3>
+                                <h3><a href="mailto:sales@paragonspm.com">sales@paragonspm.com</a></h3>
                                 <p>
-                                    Email us anytime for anykind <br>
-                                    ofquety.
+                                    Email us to start your Sales <br>compensation journey
                                 </p>
                             </div>
                         </div>
                     </div>
+<!--
                     <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".7s">
                         <div class="contact-info-items text-center">
                             <div class="icon">
@@ -74,9 +75,13 @@
                             </div>
                         </div>
                     </div>
+-->
                 </div>
             </div>
         </section>
+                <div class="text-center">
+                    
+                </div>
 
         <!-- Contact Section Start -->
         <section class="contact-section-33 fix section-padding pt-0">
@@ -136,7 +141,11 @@
                                 </div>
                                <p class="mt-4">Discover how Paragon SPM can transform your compensation strategy with fast implementation and intuitive tools designed to make managing sales incentives effortless.</p>
                                 <p>Connect with our team today and see how we can help you drive performance, empower managers, and keep your sales force motivated — all with a solution that’s powerful yet refreshingly simple to use.</p>
-                                
+                                <div class="main-button mt-4" style="display: block;">
+                                    <a href="#"  onclick="openVideoModal(event)">
+                                      <span class="theme-btn">Take a demo</span>
+                                    </a>
+                                </div>
                             </div>
                         </div>
                         <div class="col-lg-6">

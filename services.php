@@ -120,7 +120,7 @@
                         </div>
                     </div>
                   <div class="col-xl-6 col-lg-6 col-md-6 mt-5 wow fadeInUp" data-wow-delay=".5s">
-                        <img src="assets/img/home1.webp" class="img-fluid">
+                        <img src="assets/img/p1.png" class="img-fluid">
                     </div>
                     
                 </div>
@@ -133,9 +133,9 @@
                 
                 <div class="row mt-5">
                       <div class="col-xl-6 col-lg-6 col-md-6 mt-5 wow fadeInUp" data-wow-delay=".5s">
-                        <img src="assets/img/home1.webp" class="img-fluid">
+                        <img src="assets/img/p2.png" class="img-fluid">
                     </div>
-                    <div class="col-xl-6 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".3s">
+                    <div class="col-xl-6 col-lg-6 col-md-6 wow fadeInUp mt-4" data-wow-delay=".3s">
                         <div class="service-box-items">
                            
                             <div class="content"> 
